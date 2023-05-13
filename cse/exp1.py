@@ -1,12 +1,13 @@
 import pandas as pd
 import numpy as np
-data = pd.read_csv("enjoysport.csv")
+data = pd.read_csv("https://github.com/manirevu10/MachineLearningLab/blob/master/enjoysport.csv")
 print(data)
 d = np.array(data.iloc[:, 0:-1])
 print("The attributes are: ", d)
 t = np.array(data.iloc[:, -1])
 print("The target is: ", t)
 def train(c, t):
+    specific_h = c[0].copy()
     for i, val in enumerate(t):
         if val == 'yes':
             specific_h = c[i].copy()

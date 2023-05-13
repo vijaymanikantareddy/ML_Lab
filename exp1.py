@@ -20,6 +20,7 @@ for i in range(1, len(a)):
             else:
                 hypothesis[j] = '?'
     print("\n The hypothesis for the training instance {} is : \n".format(i+1), hypothesis)
+
 print("\n The Maximally specific hypothesis for the training instance is ")
 print(hypothesis)
 

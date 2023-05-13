@@ -1,7 +1,7 @@
 # Linear Regression
 
 import numpy as np 
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 x = 2 * np.random.rand(100,1) 
 y = 4 + 3 * x+ np.random.rand(100,1)
@@ -17,4 +17,4 @@ plt.figure(figsize=(10,5))
 plt.xlabel('x')
 plt.ylabel('y') 
 plt.scatter (x,y) 
-plt.plot (x,y_pred,color='red')
+plt.plot (x,y_pred, color='red')
