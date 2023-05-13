@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-data = pd.read_csv("https://github.com/manirevu10/MachineLearningLab/blob/master/enjoysport.csv")
+data = pd.read_csv("enjoysport.csv")
 print(data)
 d = np.array(data.iloc[:, 0:-1])
 print("The attributes are: ", d)
