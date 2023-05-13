@@ -28,7 +28,7 @@ print (y)
 # Split the dataset into train and test data in 70:30 ratio.
 
 # The train data contains 105 samples and test data contains 45 samples
-x_train, x_test, y_train, y_test = train_test_split(xy, test_size=0.3)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3)
 # Train the model using KNN classifier with neighbours =5
 
 knnclf = KNeighborsClassifier (n_neighbors = 5)
