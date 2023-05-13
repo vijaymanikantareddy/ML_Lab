@@ -1,9 +1,7 @@
-import csv
-a = []
-with open('enjoysport.csv','r') as csvfile:
-    for row in csv.reader(csvfile):
-        a.append(row)
-    print(a)
+import pandas as pd
+import numpy as np
+a = pd.read_csv("enjoysport.csv")
+print(a)
 
 print("\n The Total Number of Training Instances are: ", len(a))
 num_attribute = len(a[0])-1
